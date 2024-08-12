@@ -3,6 +3,16 @@
 
 A brief description of what this project does and who it's for
 
+## Installation
+
+Install my-project with npm
+
+```bash
+  npm install my-project
+  cd my-project
+```
+
+
 
 ## API Reference
 
@@ -41,8 +51,14 @@ A brief description of what this project does and who it's for
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `vote`      | `string` | `Vote Count`
-|`change`|`string`|`Either Increase/Decrease depending on UpVotes or Downvotes`
+| `vote`      | `string` | `upVote/DownVote `|
+|`change`|`string`|`Increase/Decrease `|
 
 ```http 
-  PATCH /v1/videos/:${videoId}/
+  PATCH /v1/videos/:${videoId}/${views}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `views`      | `string` | `view Count increases by 1`
+
