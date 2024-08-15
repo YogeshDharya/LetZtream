@@ -20,12 +20,12 @@ Install my-project with npm
 
 ```http
 
-  GET /v1/videos/:videoId
+  GET /v1/videos/${videoId}
 ```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+| `videoId` | `string` | `Identifies the video uniquely` |
 
 #### Get Video
 
